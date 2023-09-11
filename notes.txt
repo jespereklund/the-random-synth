@@ -1,0 +1,69 @@
+
+----------------- controls ----------------------
+
+  parameter       type & values       labels
+
+TEMPO
+  frequency       log 0.1 - 500       (0.1, 500)
+  length          lin 0 - 1           (0, 1)
+    
+VIBRATO    
+  frequency       log 0.1 - 500       (0.1, 500)
+  depth           log 0.01 - 1        (0, 1)
+    
+ADSR    
+  A               log 0.0005 - 50     (0, 50)
+  D               log 0.0005 - 50     (0, 50)
+  S               log 0.001 - 1       (0, 1)
+  R               log 0.0005 - 50     (0, 50)
+  bypass          checkbox
+    
+CPU    
+  CPU usage (%)   label 
+    
+OUTPUT    
+  volume          log 0.001 - 20      (0, 20)
+  mute            checkbox
+  clip            LED indicator
+
+SH
+  min frequency   log 20 - 20000      (20, 20k)
+  max frequency   log 20 - 20000      (20, 20k)
+  portamento      log 0.001 - 10      (0, 1)
+  chromatic       checkbox
+  scale           combobox            (Chromatic, Major, Minor, Octave, Fifths, Dim, Major Full, Minor Full, Pentatone)
+  key             combobox            (C, C#, D, D#, E, F, F#, G, G#, A, A#, H)
+  poly            numeric stepper     (1 - 8)
+  zero            checkbox
+
+PRESETS
+  num             buttons             (1 - 10)
+
+OVERTONES
+  2. harmonic     log 0.001 - 2       (0, 2)
+  3. harmonic     log 0.001 - 2       (0, 2)
+  4. harmonic     log 0.001 - 2       (0, 2)
+  5. harmonic     log 0.001 - 2       (0, 2)
+  6. harmonic     log 0.001 - 2       (0, 2)
+  7. harmonic     log 0.001 - 2       (0, 2)
+  8. harmonic     log 0.001 - 2       (0, 2)
+  instrument      combobox            (Piano, Violin etc ... )
+  bypass          checkbox
+
+
+
+todo
+
+alle props i url, til send-synth-link-til-ven
+slider css
+tempo trigger blink
+tjek i Edge, Firefox, Opera, Safari ...
+hjul over sliders
+
+gem uiParams og volumeparams hele tiden i localStorage
+hent uiParams ved load, hvis de findes, ellers load default params. Og gem i localStorage.
+
+
+V2:
+stereo
+pan
