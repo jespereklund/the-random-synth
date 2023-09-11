@@ -13,3 +13,5 @@ It has 10 presets out-of-the-box.
 The UI is written in Svelte.
 
 Utilizing the web standard [Audio Worklet](https://webaudio.github.io/web-audio-api/#AudioWorklet)
+
+You can try it here: [flettedehvaler.dk/random_synth](https://flettedehvaler.dk/random_synth/)
